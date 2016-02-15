@@ -107,12 +107,6 @@ body {
     color: #1e3c8f;
 }
 
-.navbar-nav li .dropdown-menu {
-    margin-top: -10px;
-    padding: 0px;
-    border: 0px;
-}
-
 #nav-header {
     margin-top: 6px;
 }
@@ -126,38 +120,38 @@ body {
     color: #1e3c8f;
 }
 
-.yamm .yamm-content {
+.navbar-nav li .dropdown-menu {
     background-image: url(../img/bg-mega-menu.png);
     background-size: cover;
     background-repeat: repeat;
-    color: #ffffff;
-    padding-bottom: 5px;
-    padding-left: 80px;
+    margin-top: -10px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 0px;
 }
 
-.yamm-content .row {
-    margin-left: 0px;
+.dropdown-menu li {
+    width: 33%;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    float: left;
 }
 
-.yamm-content .row .mm-list {
-    padding: 0px;
+.mm-list {
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
 }
 
-.yamm-content .row .mm-list a {
-    color: #ffffff;
+.mm-list a {
+    color: #ffffff !important;
     font: 14px Roboto !important;
     text-decoration: none;
 }
 
-.yamm-content .row .mm-list a:hover {
+.mm-list a:hover {
     color: #cccbcb !important;
-}
-
-.icon-tj {
-    width: 15px;
-    height: 15px;
-    margin-bottom: 2px;
-    margin-right: 10px;
 }
 
 .mm-sub {
@@ -167,9 +161,6 @@ body {
 .mm-desc {
     color: #cccbcb;
     font: 14px Roboto Light;
-    margin-bottom: 20px;
-    margin-left: 28px !important;
-    width: 80%;
 }
 
 .fa-search {
@@ -211,7 +202,7 @@ body {
     padding-right: 24px;
     border: 0 none;
     box-shadow: none;
-    display:block;
+    display: block;
 }
 
 .search-form .form-group input.form-control::-webkit-input-placeholder {

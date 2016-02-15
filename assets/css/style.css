@@ -119,6 +119,7 @@ body {
 
 #nav-header li a {
     font: 14px Roboto Medium;
+    text-transform: uppercase;
 }
 
 #nav-header li a:hover {

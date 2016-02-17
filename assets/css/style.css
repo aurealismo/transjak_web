@@ -374,7 +374,6 @@ body {
 
 #page-content-wrapper {
     width: 100%;
-    position: absolute;
     overflow-x: hidden; 
 }
 
@@ -401,15 +400,19 @@ footer {
 }
 
 #nav-footer {
-    margin-top: 5px;
-    display:inline-block;
-    float: none;
+    margin: 0 auto 0 auto;
+    padding: 5px;
+    display: table;
 }
 
 #nav-footer .fa {
     font-size: 16px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#nav-footer li {
+    display: inline-block;
 }
 
 #nav-footer li a {
@@ -432,7 +435,12 @@ footer {
     color: #ffffff;
     font: 11px Roboto Light;
     line-height: 30px;
-    margin: 0px;
+    margin: 0 auto 0 auto;
+}
+
+#footer-bottom p {
+    margin: 0 auto 0 auto;
+    display: table;
 }
 
 #page-contents {

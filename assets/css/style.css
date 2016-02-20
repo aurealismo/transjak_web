@@ -43,6 +43,10 @@
     #twitter-widget-0 {
         margin-left: 0px !important;
     }
+
+    #navbar-search { 
+        display: none !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -53,6 +57,9 @@
     .uk-dotnav * * {
         width: 10px !important;
         height: 10px !important;
+    }
+    #navbar-search { 
+        display: none !important;
     }
 }
 
@@ -88,6 +95,7 @@ body {
 .navbar .container-fluid {
     padding-left: 40px;
     padding-right: 40px;
+    height: 65px;
 }
 
 .navbar-header {
@@ -108,7 +116,8 @@ body {
 }
 
 #nav-header {
-    margin-top: 6px;
+    height: 100%;
+    padding: 8px 8px 0 8px;
 }
 
 #nav-header li a {
@@ -163,25 +172,35 @@ body {
     white-space: normal;
 }
 
-.fa-search {
-    font-size: 14px;
-    margin-top: 4px;
-    padding-left: 9px;
+#navbar-search {
+    float: right;
+    display: inline-block;
+    height: 100%;
+    padding: 19px 3px;
 }
 
-#navbar-search {
-    max-width: 160px;
+.form-control-feedback {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    text-align: center;
+    pointer-events: none;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .search-form .form-group {
     background-color: #ffffff;
     width: 26px;
     height: 26px;
-    margin-bottom: 0px;
-    margin-left: 8px;
-    margin-top: 12px;
+    margin: 0;
     border: 1px solid #ccc;
-    border-radius: 25px;
+    border-radius: 25px !important; /** bug fixed **/
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     float: right !important;
     transition: all 0.35s ease, border-radius 0s;
@@ -192,7 +211,6 @@ body {
 
 .search-form .form-group.showClass {
     width: 100%;
-    border-radius: 4px 25px 25px 4px;
 }
 
 .search-form .form-group input.form-control {
@@ -271,7 +289,6 @@ body {
     background: url(../img/db-small.png);
     background-repeat: repeat-x;
     height: 10px;
-    margin-top: 10px;
 }
 
 #wrapper {
@@ -582,4 +599,16 @@ input {
 
 .navbar-default .navbar-nav >.open > a:hover {
     background: transparent;
+}
+
+.nav > li {
+    height: 100%;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
 }

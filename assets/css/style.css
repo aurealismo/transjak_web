@@ -139,8 +139,6 @@ body {
 }
 
 .mm-list {
-    margin-left: 20px;
-    margin-right: 20px;
     float: left;
 }
 
@@ -162,6 +160,7 @@ body {
     color: #cccbcb;
     font: 14px Roboto Light;
     text-transform: none;
+    white-space: normal;
 }
 
 .fa-search {
@@ -568,4 +567,19 @@ input {
     max-width: 300px !important;
     height: 400px !important;
     margin-left: 40px;
+}
+
+/** override **/
+.dropdown-menu > li > a {
+    padding: 0 27px;
+    position: relative;
+    top: -3px;
+}
+
+.dropdown-menu > li {
+    background: url(../img/icon-tj-white.png) no-repeat;
+}
+
+.navbar-default .navbar-nav >.open > a:hover {
+    background: transparent;
 }

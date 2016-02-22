@@ -43,7 +43,6 @@
     #twitter-widget-0 {
         margin-left: 0px !important;
     }
-
     #navbar-search { 
         display: none !important;
     }
@@ -95,7 +94,7 @@ body {
 .navbar .container-fluid {
     padding-left: 40px;
     padding-right: 40px;
-    height: 65px;
+    height: 55px;
 }
 
 .navbar-header {
@@ -130,7 +129,7 @@ body {
 }
 
 .navbar-nav li .dropdown-menu {
-    background-image: url(../img/bg-mega-menu.png);
+    background-image: url(../images/bg-mega-menu.png);
     background-size: cover;
     background-repeat: repeat;
     margin-top: -10px;
@@ -145,6 +144,7 @@ body {
     margin-bottom: 8px;
     margin-top: 10px;
     float: left;
+    white-space: normal;
 }
 
 .mm-list {
@@ -169,7 +169,6 @@ body {
     color: #cccbcb;
     font: 14px Roboto Light;
     text-transform: none;
-    white-space: normal;
 }
 
 #navbar-search {
@@ -286,9 +285,10 @@ body {
 }
 
 #header-bottom {
-    background: url(../img/db-small.png);
+    background: url(../images/db-small.png);
     background-repeat: repeat-x;
     height: 10px;
+    margin-top: 10px;
 }
 
 #wrapper {
@@ -304,7 +304,7 @@ body {
 }
 
 #sidebar-wrapper {
-    background-image: url(../img/bg-mega-menu.png);
+    background-image: url(../images/bg-mega-menu.png);
     background-size: cover;
     background-repeat: repeat;
     width: 0;
@@ -428,25 +428,26 @@ footer {
     margin-right: 5px;
 }
 
-#nav-footer li {
+#nav-footer a {
     display: inline-block;
-}
-
-#nav-footer li a {
     color: #666666;
     font: 14px Roboto Medium;
     padding: 10px;
 }
 
+#nav-footer a:hover {
+    text-decoration: none;
+}
+
 #footer-top {
-    background: url(../img/db-small.png);
+    background: url(../images/db-small.png);
     background-repeat: repeat-x;
     height: 10px;
     margin: 0px;
 }
 
 #footer-bottom {
-    background: url(../img/db-medium.png);
+    background: url(../images/db-medium.png);
     background-repeat: repeat-x;
     height: 30px;
     color: #ffffff;
@@ -586,7 +587,53 @@ input {
     margin-left: 40px;
 }
 
-/** override **/
+
+/** overrides **/
+.yamm .dropdown.yamm-fw .sub-menu {
+    left: 0;
+    right: 0;
+}
+.navbar-nav li .sub-menu {
+    background-image: url(../images/bg-mega-menu.png);
+    background-size: cover;
+    background-repeat: repeat;
+    margin-top: -10px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 0px;
+}
+.navbar-nav>li>.sub-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.yamm .sub-menu {
+    left: auto;
+}
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
 .dropdown-menu > li > a {
     padding: 0 27px;
     position: relative;
@@ -594,7 +641,7 @@ input {
 }
 
 .dropdown-menu > li {
-    background: url(../img/icon-tj-white.png) no-repeat;
+    background: url(../images/icon-tj-white.png) no-repeat;
 }
 
 .navbar-default .navbar-nav >.open > a:hover {
@@ -605,10 +652,15 @@ input {
     height: 100%;
 }
 
+
 .arrow-up {
     width: 0; 
     height: 0; 
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-bottom: 5px solid black;
+}
+
+.form-control-feedback {
+    cursor: pointer;
 }
